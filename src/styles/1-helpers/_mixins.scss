@@ -1,0 +1,23 @@
+// Put your mixins
+
+/* Breakpoint for media query */
+$mobileScreen: 320px;
+$tabletScreen: 481px;
+$laptopScreen: 769px;
+
+@mixin mobile-screen {
+  @media (min-width: #{$mobileScreen}) and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media (min-width: #{$tabletScreen}) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop-screen {
+  @media (min-width: #{$laptopScreen}) {
+    @content;
+  }
+}
