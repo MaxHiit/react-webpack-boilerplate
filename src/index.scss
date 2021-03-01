@@ -1,0 +1,21 @@
+// This is the single file output by sass. It is intended to ONLY @import or @use other files
+
+// 1 - HELPERS
+// If you want to use variables or mixins in a scss file just import the _helpers.scss file into your component style file.
+
+// 2 - TOOLS
+/* Directory for reset css, vendors, lib css etc.. */
+@use "./styles/2-tools/remedy";
+
+// 3 - BASICS
+/* Directory for the general style */
+/* Uncomments typography in order to add style regarding typography */
+@use "./styles/3-basics/global";
+// @use "./styles/3-basics/typographie";
+
+// 4 - PAGE
+/* Directory for the template style of the different pages */
+@use "./styles/4-pages/home";
+
+// 5 - COMPONENTS
+/* Import here the css files of the components */
