@@ -1,0 +1,5 @@
+@use "../1-helpers/helpers";
+
+h1 {
+  color: helpers.$titleColor;
+}
